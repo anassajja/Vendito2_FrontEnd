@@ -1,8 +1,7 @@
 'use strict';
 'use client';
 
-import React from 'react';
-import { useState, useEffect, Fragment, useContext } from 'react';
+import React, { useState, useEffect, Fragment, useContext }  from 'react';
 import { BellIcon, HomeIcon, UsersIcon, ArrowRightStartOnRectangleIcon, CogIcon, ShoppingBagIcon, UserCircleIcon } from '@heroicons/react/24/outline';
 import axios from 'axios';
 import Cookies from 'js-cookie';
@@ -22,12 +21,11 @@ const User_admin = () => {
     const router = useRouter();
     const { logOut } = useContext(AuthContext);
 
-    if (!token) {
-        router.push('/login');
-        return;
-    }
-
     useEffect(() => {
+        if (!token) {
+          router.push('/login');
+          return;
+        }
         axios.get(`http://localhost:8000/api/users`, {
         headers: {
             'Authorization': `Bearer ${token}` // replace `token` with your admin token

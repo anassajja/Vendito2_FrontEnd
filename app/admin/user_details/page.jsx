@@ -22,12 +22,11 @@ const User_admin = () => {
     const router = useRouter();
     const { logOut } = useContext(AuthContext);
 
-    if (!token) {
-        router.push('/login');
-        return;
-    }
-
     useEffect(() => {
+        if (!token) {
+          router.push('/login');
+          return;
+        }
         axios.get(`http://localhost:8000/api/users`, {
         headers: {
             'Authorization': `Bearer ${token}` // replace `token` with your admin token

@@ -14,7 +14,7 @@ const TestimonialsSection = () => {
         <div className="border p-7 rounded-xl bg-white dark:bg-gray-700 drop-shadow-md border-neutral-200/50 col-span-2 flex flex-col gap-y-10 justify-between">
           <div className="flex flex-col gap-y-3.5">
             <p className="font-bold text-xl">Easy to use platform</p>
-            <p className="font-medium text-slate-700/90 dark:text-gray-300">Vendito's platform is intuitive and easy to use. I was able to list my items in no time.</p>
+            <p className="font-medium text-slate-700/90 dark:text-gray-300">Vendito&apos;s platform is intuitive and easy to use. I was able to list my items in no time.</p>
           </div>
           <div className="flex flex-col">
             <img src="https://randomuser.me/api/portraits/women/54.jpg" alt="Jane Cooper" className="h-10 w-10" />
@@ -25,7 +25,7 @@ const TestimonialsSection = () => {
         <div className="border p-7 rounded-xl bg-white dark:bg-gray-700 drop-shadow-md border-neutral-200/50 col-span-3 flex flex-col gap-y-10 justify-between">
           <div className="flex flex-col gap-y-3.5">
             <p className="font-bold text-xl">Great customer service</p>
-            <p className="font-medium text-slate-700/90 dark:text-gray-300">Vendito's customer service is top-notch. They were very responsive and helped me resolve my issues quickly.</p>
+            <p className="font-medium text-slate-700/90 dark:text-gray-300">Vendito&apos;s customer service is top-notch. They were very responsive and helped me resolve my issues quickly.</p>
           </div>
           <div className="flex flex-col">
             <img src="https://randomuser.me/api/portraits/women/30.jpg" alt="John Doe" className="h-10 w-10" />

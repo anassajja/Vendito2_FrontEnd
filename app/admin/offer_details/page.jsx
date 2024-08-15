@@ -8,7 +8,7 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 import { useRouter } from 'next/navigation';
 import { Menu, Transition } from '@headlessui/react';
-import { UserContext } from '../../context/UserContext';
+import { AuthContext } from '../../context/AuthContext';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -20,7 +20,7 @@ const User_admin = () => {
     const [loading, setLoading] = useState(true);
     const [adminAvatar, setAdminAvatar] = useState(''); // State to store the admin's avatar
     const token = Cookies.get('token');
-    const { logOut } = useContext(UserContext);
+    const { logOut } = useContext(AuthContext);
     const router = useRouter();
     // const [showAlert, setShowAlert] = useState(false);
 
@@ -151,7 +151,7 @@ const User_admin = () => {
                           <Link
                             href="#"
                             onClick={() => {
-                              logOut();
+                              logOut(); // Call the logOut function when the user clicks the link
                               alert("You're logged out."); // Display a window alert
                             }}
                             className={`${

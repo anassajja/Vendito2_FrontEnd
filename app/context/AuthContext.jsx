@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
 
 
   const logIn = (userData) => { // Update the logIn function to accept userData and role parameters
-    setIsAuthenticated(true);
+    setIsAuthenticated(true); // Set isAuthenticated to true
     setUser(userData); // Set the user state to the userData parameter
     localStorage.setItem('isAuthenticated', 'true'); // Store isAuthenticated in localStorage
     localStorage.setItem('user', JSON.stringify(userData)); // Store user in localStorage
